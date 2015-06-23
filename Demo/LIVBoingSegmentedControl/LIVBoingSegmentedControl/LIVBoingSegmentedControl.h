@@ -40,7 +40,7 @@
 //boingness
 @property (nonatomic, assign) Boolean boingActivated;                   //Boing when selector moves
 @property (nonatomic, assign) float boinginess;                         //How much boing
-@property (nonatomic, assign) id boingVelocity;                         //Boing throw velocity
+@property (nonatomic, strong) id boingVelocity;                         //Boing throw velocity
 @property (nonatomic, assign) float boingMass;                          //Mass of selector
 
 // Init functions
