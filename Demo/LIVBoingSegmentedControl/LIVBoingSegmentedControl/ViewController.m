@@ -34,11 +34,15 @@
     _menu = [[LIVBoingSegmentedControl alloc] initMenuWithFrame:menuFrame menuItems:menuItems];
     
     // Change properties
-    _menu.delegate = self;
+    _menu.tapDelegate = self;
     _menu.selectedLabelColor = [UIColor whiteColor];
     
     // Add to view
     [_menu addMenuToView:self.view];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [_menu moveSelectorToSegment:1];
 }
 
 - (void)didReceiveMemoryWarning {

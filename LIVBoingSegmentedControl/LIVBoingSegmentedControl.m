@@ -121,17 +121,6 @@
     [view addSubview:_menuView];
 }
 
-- (void)tappedSegment:(UITapGestureRecognizer*)sender {
-    UIView *view = sender.view;
-    _currentlySelected = (int)view.tag;
-    
-    [self setColors:_currentlySelected];
-    
-    if ([self.delegate respondsToSelector:@selector(livBoingSegmentedControl:tappedSegmentWithIndex:)]) {
-        [self.delegate livBoingSegmentedControl:self tappedSegmentWithIndex:_currentlySelected];
-    }
-}
-
 - (void)setColors:(int)currentlySelected {
     for (UIView *i in _menuView.subviews){
         if (i.tag != 100) {
@@ -187,6 +176,23 @@
                          [selectorView setFrame:CGRectMake(xPos, selectorView.frame.origin.y, selectorView.frame.size.width, selectorView.frame.size.height)];
                      }
                      completion:^(BOOL finished) { }];
+}
+
+#pragma mark - Delegates
+
+- (void)tappedSegment:(UITapGestureRecognizer*)sender {
+    UIView *view = sender.view;
+    _currentlySelected = (int)view.tag;
+    
+    [self setColors:_currentlySelected];
+    
+    if ([self.tapDelegate respondsToSelector:@selector(livBoingSegmentedControl:tappedSegmentWithIndex:)]) {
+        [self.tapDelegate livBoingSegmentedControl:self tappedSegmentWithIndex:_currentlySelected];
+    }
+}
+
+- (void)moveSelectorToSegment:(int)segment {
+    [self setColors:segment];
 }
 
 @end

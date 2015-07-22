@@ -13,8 +13,8 @@
 
 @interface LIVBoingSegmentedControl : UIView
 
-// Delegate
-@property (nonatomic, assign) id<LIVBoingTapDelegate> delegate;
+// Delegates
+@property (nonatomic, assign) id<LIVBoingTapDelegate> tapDelegate;
 
 // General
 @property (nonatomic, strong) NSArray *menuItems;                       //The menu items
@@ -44,10 +44,13 @@
 @property (nonatomic, assign) float boingMass;                          //Mass of selector
 
 // Init functions
--(id)initMenuWithFrame:(CGRect)frame menuItems:(NSArray*)menuItems;     //Set items and frame size
+- (id)initMenuWithFrame:(CGRect)frame menuItems:(NSArray*)menuItems;     //Set items and frame size
 
 // Add functions
 - (void)addMenuToView:(UIView*)view;                                    //Add menu to view
+
+// Move selector to index manually
+- (void)moveSelectorToSegment:(int)segment;                              //Move selector to index manually
 
 @end
 
@@ -56,6 +59,6 @@
 @optional
 
 // On segment pressed
--(void)livBoingSegmentedControl:(LIVBoingSegmentedControl *)boingMenu tappedSegmentWithIndex:(NSUInteger)index;
+- (void)livBoingSegmentedControl:(LIVBoingSegmentedControl *)boingMenu tappedSegmentWithIndex:(NSUInteger)index;
 
 @end

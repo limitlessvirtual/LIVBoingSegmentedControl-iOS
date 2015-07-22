@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>70EEF24B-3660-4BB0-B7C9-773C21853D65</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LIVBoingSegmentedControl</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D409195FC1225A0CC11F24771C9AAEC35D0A9AEA</key>
+		<string>https://github.com/limitlessvirtual/LIVBoingSegmentedControl-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Demo/LIVBoingSegmentedControl/LIVBoingSegmentedControl.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D409195FC1225A0CC11F24771C9AAEC35D0A9AEA</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/limitlessvirtual/LIVBoingSegmentedControl-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D409195FC1225A0CC11F24771C9AAEC35D0A9AEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D409195FC1225A0CC11F24771C9AAEC35D0A9AEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LIVBoingSegmentedControl-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
